@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#wrap{position: relative; }
+#header{width: 100%;  height: 75px; border-bottom: 1px solid #fff; position:absolute; top: 0; left: 0; z-index: 1;}
+
+/*마우스하버시*/
+#header:hover{background: #fff; }
+#header:hover .logo a{background-position: 0 -48px;}
+#header:hover .hBar a{background-position: 0 -19px;}
+#header:hover .hSC a{background-position: 0 -22px;}
+#header:hover .gnb ul .d1 .m{color: #555;}
+#header:hover .gnb ul .d1:hover .m{color: #005890;}
+#header:hover .gnb ul .d1:hover .m:after{opacity: 1; width: 120px;}
+/*#header:hover .subBg{display: block;}*/
+
+#headerIn{width: 980px; height: 75px; margin: 0 auto; /*background: #c7c71f;*/ position: relative; }
+.logo{padding-top: 18px; margin-left: 39px; }
+.logo a{display: block; text-indent: -9999px; width: 88px; height: 42px; background-image: url(../img/logo.png); background-repeat: no-repeat; transition: all 0.7s; }
+
+.hBar{position: absolute; top: 33px; right: 70px;}
+.hBar a{display: block; text-indent: -9999px; width: 19px; height: 16px; background-image: url(../img/ico_h_bar.png); background-repeat:  no-repeat;}
+.hSC{position: absolute; top: 33px; right: 20px;}
+.hSC a{display: block; text-indent: -9999px; width: 18px; height: 18px; background-image: url(../img/ico_h_sc.png); background-repeat:  no-repeat;}
+
+.gnb{position: absolute; top: 33px; right: 105px; z-index: 300; height: 18px; overflow: hidden;}
+.gnb h2{display: none;}
+.gnb ul .d1{float: left; margin-right: 10px; width: 120px; position: relative; text-align: center; }
+.gnb ul .d1:last-child{margin-right: 0;}
+.gnb ul .d1 .m{display: block; font-size: 18px; font-weight: 500; color: #fff; height: 18px; }
+.gnb ul .d1 .m:after{content: ""; display: block; width: 0; height: 3px; background-color: #005890; position: absolute; bottom: -25px; left: 0; opacity: 0; transition: all 0.5s;}
+
+
+.gnb ul .d1 .sub{width: 120px; height: 300px;  text-align: center; /*background: #ebebeb; */position: absolute; top: 18px; left: 0;}
+/*.gnb:hover ul li .sub{display: block;}*/
+.gnb ul .d1 .sub ul{padding-top: 48px;}
+.gnb ul .d1 .sub ul li{float: none; margin: 0 0 12px 0;}
+.gnb ul .d1 .sub ul li a{font-size: 15px; color: #555;}
+.gnb ul .d1 .sub ul li a:hover{color: #075d89; font-weight: 600;}
+#header .subBg{width: 100%; height: 300px; background: #f0f0f0; position: absolute; top: 76px; left: 0; display: none;}
+
+/*푸터영역*/
+#footer{height: 230px; background: #4c5359;}
+.footerTop{height: 50px; background: #373f42;}
+.footerTop .topIn{width: 980px; margin: 0 auto;  position: relative; }
+.footerTop .fmenu li{float: left;  margin-right: 25px; }
+.footerTop .fmenu li a{display: block; color: #bcbcbc; font-size: 15px; line-height: 50px; }
+.footerTop .fmenu li:nth-child(3) a{color: #e0e0e0; font-weight: 500;}
+
+.footerTop .family{position: absolute; top: 10px; right: 0; width: 150px;} 
+.footerTop .family .btn{display: block; font-size: 14px; border:1px solid #c9cac5; color: #c9cac5; padding: 0 25px 0 10px;background-repeat:  no-repeat; background-position: 120px 10px; line-height: 30px;}  
+.footerTop .family .btn.off{background-image: url(../img/ico_family.png);}
+.footerTop .family .btn.on{background-image: url(../img/ico_family_hover.png); display: none;}
+/*.footerTop .family:hover .btn{background-image: url(../img/ico_family_hover.png);}*/
+.footerTop .family .list{width: 100%; /*background: #efefef;*/ position: absolute; top: 32px; left: 0; display: none;}
+/*.footerTop .family:hover .list{display: block; }*/
+.footerTop .family .list li{border: 1px solid #989898; border-top: none; position: relative; }
+.footerTop .family .list li a{display: block; padding: 6px 10px; color: #989898; font-size: 14px;}
+.footerTop .family .list li:hover a{color: #333; background: #e8e8e8; font-weight: 500;}
+/*서브안의 서브 depth*/
+.footerTop .family .list li .depth{width: 120px; border: 1px solid #989898; position: absolute; top:0; left: 148px; display: none;}
+.footerTop .family .list li:hover .depth{display: block;}
+.footerTop .family .list li .depth a:hover{color: #0858a8;}
+
+
+.footerIn{width: 980px; margin: 0 auto; }
+.footerIn p{text-align: center; color: #c9cac5; font-size: 13px; margin-bottom: 13px; }
+.footerIn .flogo{padding-top: 20px; margin-bottom: 20px;}
+.footerIn .flogo a{display: inline-block; text-indent: -9999px; width: 87px; height: 40px; background: url(../img/flogo.png)no-repeat center 0;}
+.footerIn .finfo span{margin-right: 13px;}
+
+
+
